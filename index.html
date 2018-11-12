@@ -34,8 +34,32 @@
       <li>This website showcases portfolio of my skills and qualifications and provides a snapshot of some projects.</li>
 
   </ul>
-  <a href="portfolio.html"><img src="images/helloworld.png" width="300px" height="200px" alt="Portfolio Image"></a>
-  </main>  
+  <h4>Contact Us</h4>
+  <form action="https://formspree.io/cd0868@wayne.edu" method="POST" data-validate>
+    <div>
+        <label for="name">Name
+            <input type="text" name="name" class="form-input">
+        </label>
+    </div>
+    <div>
+        <label for="email">Email
+            <input type="email" name="_replyto" class="form-input" required>
+        </label>
+    </div>
+    <div>
+       <label for="message">Message
+            <textarea id="message" name="message" class="form-input" required></textarea>
+       </label>
+    </div>
+    <div>
+        <button type="submit">Send</button>
+    </div>
+    <input type="hidden" name="_next" value="https://inf7420.github.io/srinivasan-project/thanks.html" />
+    <input type="hidden" name="_subject" value="Email from class project" />
+    <input type="text" name="_gotcha" style="display:none"/>
+    </form>
+  </main> 
+  <script src="scripts.js"></script>
   <!--End Main-->
     
   <!--Begin footer-->
